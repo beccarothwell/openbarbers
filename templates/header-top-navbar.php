@@ -11,7 +11,7 @@
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
-	<button type="button" class="btn btn-default navbar-btn navbar-right navbar-link">Book Now</button>
+	<button type="button" class="btn btn-default navbar-btn navbar-right navbar-link">Book a haircut</button>
       <?php
         if (has_nav_menu('primary_navigation')) :
           wp_nav_menu(array('theme_location' => 'primary_navigation', 'menu_class' => 'nav navbar-nav'));
