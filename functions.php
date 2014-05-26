@@ -17,3 +17,10 @@ require_once locate_template('/lib/relative-urls.php');   // Root relative URLs
 require_once locate_template('/lib/widgets.php');         // Sidebars and widgets
 require_once locate_template('/lib/scripts.php');         // Scripts and stylesheets
 require_once locate_template('/lib/custom.php');          // Custom functions
+
+require_once locate_template('/lib/theme-options.php');           // First test theme options functions
+require_once locate_template( 'lib/wptuts-options.php' );		// Uploader test theme options functions
+
+if ( is_admin() ){ //require only in admin!
+require_once locate_template ('/lib/ob-theme-settings.php');		// Open Barbers theme options functions
+}
