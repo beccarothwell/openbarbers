@@ -10,10 +10,11 @@ function ob_options_page_sections() {
      
     $sections = array();
     // $sections[$id]       = __($title, 'ob_textdomain');
+	$sections['navbar']    = __('Navbar', 'ob_textdomain');
+	$sections['jumbotron']   = __('Jumbotron', 'ob_textdomain');
     $sections['column1']    = __('Column 1', 'ob_textdomain');
     $sections['column2']    = __('Column 2', 'ob_textdomain');
     $sections['column3']     = __('Column 3', 'ob_textdomain');
-    $sections['jumbotron']   = __('Jumbotron', 'ob_textdomain');
      
     return $sections;   
 }
@@ -24,6 +25,30 @@ function ob_options_page_sections() {
  * @return array
  */
 function ob_options_page_fields() {
+	// Navbar
+	
+	$options[] = array(
+        "section" => "navbar",
+        "id"      => OB_SHORTNAME . "_logo",
+        "title"   => __( 'Image Upload', 'ob_textdomain' ),
+        "desc"    => __( 'Some Description', 'ob_textdomain' ),
+        "type"    => "image-uploader",
+        "std"     => "http://placekitten.com/g/300/140",
+		"btn"     => __('Upload Image','ob_textdomain')
+    );
+	
+	//Jumbotron Section
+	
+	$options[] = array(
+        "section" => "jumbotron",
+        "id"      => OB_SHORTNAME . "_jumbotron_image",
+        "title"   => __( 'Image Upload', 'ob_textdomain' ),
+        "desc"    => __( 'Some Description', 'ob_textdomain' ),
+        "type"    => "image-uploader",
+        "std"     => "http://placekitten.com/g/300/140",
+		"btn"     => __('Upload Image','ob_textdomain')
+    );
+
     // Column One section
 	
 	$options[] = array(
@@ -112,18 +137,6 @@ function ob_options_page_fields() {
         "desc"    => __( 'A textarea for a block of text. HTML tags allowed!', 'ob_textdomain' ),
         "type"    => "textarea",
         "std"     => __('Some default value','ob_textdomain')
-    );
-	
-	//Jumbotron Section
-	
-	$options[] = array(
-        "section" => "jumbotron",
-        "id"      => OB_SHORTNAME . "_jumbotron_image",
-        "title"   => __( 'Image Upload', 'ob_textdomain' ),
-        "desc"    => __( 'Some Description', 'ob_textdomain' ),
-        "type"    => "image-uploader",
-        "std"     => "http://placekitten.com/g/300/140",
-		"btn"     => __('Upload Image','ob_textdomain')
     );
 	
 	/*
