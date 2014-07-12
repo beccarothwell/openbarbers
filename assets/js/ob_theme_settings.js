@@ -1,4 +1,4 @@
-/*############### Error messages ######################*/	
+/*############### Error messages ######################*/
 jQuery(function(){
 	var error_msg = jQuery("#message p[class='setting-error-message']");
 	// look for admin messages with the "setting-error-message" error class
@@ -11,10 +11,10 @@ jQuery(function(){
 		
 		// look for the input with id=setting title and add a red border to it.
 		jQuery("input[id='" + error_setting + "']").attr('style', 'border-color: red');
-	}	
+	}
 });
 
-/*############### Media uploader ######################*/	
+/*############### Media uploader ######################*/
 
 // Uploading files
 /** Thanks to Thomas Griffin for his thoroughly commented example of a custom uploader on Github: https://github.com/thomasgriffin/New-Media-Image-Uploader/blob/master/js/media.js
@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
     $('.media-upload-button').click(function(e) {
         e.preventDefault();
         upload_image($(this));
-        return false; 
+        return false;
     });
 });
 function upload_image(el){

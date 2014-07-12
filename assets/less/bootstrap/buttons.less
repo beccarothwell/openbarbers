@@ -57,6 +57,13 @@
 .btn-default {
   .button-variant(@btn-default-color; @btn-default-bg; @btn-default-border);
 }
+.btn-base {
+  .button-variant(@btn-base-color; @btn-base-bg; @btn-base-border);
+}
+.btn-accent {
+  .button-variant(@btn-accent-color; @btn-accent-bg; @btn-accent-border);
+  background: -webkit-linear-gradient(bottom, @brand-accent, @brand-accent-two);
+}
 .btn-primary {
   .button-variant(@btn-primary-color; @btn-primary-bg; @btn-primary-border);
 }

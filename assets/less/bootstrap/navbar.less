@@ -11,6 +11,7 @@
 .navbar {
   position: relative;
   min-height: @navbar-height; // Ensure a navbar always shows (e.g., without a .navbar-brand in collapsed mode)
+  //height: @navbar-big-height;
   margin-bottom: @navbar-margin-bottom;
   border: 1px solid transparent;
 
@@ -33,6 +34,7 @@
 
   @media (min-width: @grid-float-breakpoint) {
     float: left;
+	margin-left: -30px;
   }
 }
 
@@ -156,6 +158,9 @@
   font-size: @font-size-large;
   line-height: @line-height-computed;
   height: @navbar-height;
+  background: white;
+  //-webkit-box-shadow: 1px 1px 5px black;
+  //-webkit-transform: rotate(-3deg);
 
   &:hover,
   &:focus {
@@ -163,7 +168,7 @@
   }
   
   img {
-	margin-top: -10px;
+	//margin-top: -10px;
 	}
 
   @media (min-width: @grid-float-breakpoint) {
