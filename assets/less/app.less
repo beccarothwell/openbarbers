@@ -67,6 +67,11 @@ body.admin-bar .navbar {
 	
 	#sprites {
 		margin: 0;
+		display: none;
+		
+		@media (min-width: @grid-float-breakpoint) {
+			display: inline-block;
+		}
 		
 		> li {
 			padding: 10px 5px;
@@ -163,15 +168,33 @@ body.admin-bar .navbar {
    Footer
    ========================================================================== */
 
+.footer-row {
+	.make-row();
+	
+	.footer-col-first {
+		.make-lg-column(3.75);
+		background: #fff;
+		margin-top: 30px;
+		min-height: 400px;
+		}
+	
+	.footer-col-after {
+		.footer-col-first;
+		.make-lg-column-offset(.375);
+		}
+
+	}
+   
 .content-info {
 	background-color: #fe1535;
 	}
 
 .widget {
-	float: left;
-	position: relative;
-	display: block;
-	margin-right: 15px;
+	.make-lg-column(4);
+	//float: left;
+	//position: relative;
+	//display: block;
+	//margin-right: 15px;
 	}
 
 p.copyright {
