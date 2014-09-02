@@ -23,10 +23,8 @@ $roots_includes = array(
   'lib/extras.php',          // Custom functions
   '/lib/theme-options.php',  // First test theme options functions
   'lib/wptuts-options.php',  // Uploader test theme options functions
+  '/lib/ob-theme-settings.php' // Open Barbers theme options functions
 );
-
-if ( is_admin() ){ //require only in admin!
-require_once locate_template ('/lib/ob-theme-settings.php');		// Open Barbers theme options functions
 
 foreach ($roots_includes as $file) {
   if (!$filepath = locate_template($file)) {
@@ -36,3 +34,6 @@ foreach ($roots_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+/*if ( is_admin() ){ //require only in admin!
+require_once locate_template ('/lib/ob-theme-settings.php');		// Open Barbers theme options functions
