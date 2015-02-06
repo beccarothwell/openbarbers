@@ -22,7 +22,7 @@
 
   <?php
     do_action('get_header');
-    get_template_part('templates/header');
+    get_template_part('templates/header-top-navbar');
   ?>
   
   <div class="wrap container" role="document">
@@ -38,6 +38,8 @@
     </div><!-- /.content -->
   </div><!-- /.wrap -->
 
+  <?php  if (is_page('gallery')) { get_template_part('templates/blueimp-bootstrap-image-gallery'); } ?>
+  
   <?php get_template_part('templates/footer'); ?>
 
 </body>

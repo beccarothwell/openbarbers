@@ -7,8 +7,9 @@
  *
  * Enqueue scripts in the following order:
  * 1. jquery-1.11.1.min.js via Google CDN
- * 2. /theme/assets/js/vendor/modernizr.min.js
- * 3. /theme/assets/js/scripts.js (in footer)
+ * 2. //maps.googleapis.com/maps/api/js?v=3.exp&sensor=false
+ * 3. /theme/assets/js/vendor/modernizr.min.js
+ * 4. /theme/assets/js/scripts.js (in footer)
  *
  * Google Analytics is loaded after enqueued scripts if:
  * - An ID has been defined in config.php
@@ -24,6 +25,7 @@ function roots_scripts() {
       'css'       => '/assets/css/main.css',
       'js'        => '/assets/js/scripts.js',
       'modernizr' => '/assets/vendor/modernizr/modernizr.js',
+	  'googlemaps' => '//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false',
       'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js'
     );
   } else {
@@ -33,6 +35,7 @@ function roots_scripts() {
       'css'       => '/assets/css/main.min.css?' . $assets['assets/css/main.min.css']['hash'],
       'js'        => '/assets/js/scripts.min.js?' . $assets['assets/js/scripts.min.js']['hash'],
       'modernizr' => '/assets/js/vendor/modernizr.min.js',
+	  'googlemaps' => '//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false',
       'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'
     );
   }
@@ -49,12 +52,15 @@ function roots_scripts() {
     wp_register_script('jquery', $assets['jquery'], array(), null, false);
     add_filter('script_loader_src', 'roots_jquery_local_fallback', 10, 2);
   }
+  
+  wp_register_script('googlemaps', $assets['googlemaps'], array('jquery'), null, true);
 
   if (is_single() && comments_open() && get_option('thread_comments')) {
     wp_enqueue_script('comment-reply');
   }
   wp_enqueue_script('modernizr', get_template_directory_uri() . $assets['modernizr'], array(), null, false);
   wp_enqueue_script('jquery');
+  wp_enqueue_script('googlemaps');
   wp_enqueue_script('roots_js', get_template_directory_uri() . $assets['js'], array(), null, true);
 }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);

@@ -36,4 +36,4 @@ foreach ($roots_includes as $file) {
 unset($file, $filepath);
 
 /*if ( is_admin() ){ //require only in admin!
-require_once locate_template ('/lib/ob-theme-settings.php');		// Open Barbers theme options functions
+require_once locate_template ('/lib/ob-theme-settings.php');		// Open Barbers theme options functions */

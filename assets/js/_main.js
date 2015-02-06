@@ -53,10 +53,28 @@ var Roots = {
       // JavaScript to be fired on the home page
     }
   },
-  // About us page, note the change from about-us to about_us.
-  about_us: {
+  // About page
+  about: {
     init: function() {
-      // JavaScript to be fired on the about us page
+	  // JavaScript to be fired on the about page
+    }
+  },
+  gallery: {
+    init: function() {
+	  // JavaScript to be fired on the gallery page
+	    /*$(document).ready(function(){
+	        $('img').on('click',function(){
+		        var src = $(this).attr('src');
+			    var img = '<img src="' + src + '" class="img-responsive"/>';
+			    $('#myModal').modal();
+			    $('#myModal').on('shown.bs.modal', function(){
+			        $('#myModal .modal-body').html(img);
+			    });
+		    $('#myModal').on('hidden.bs.modal', function(){
+			    $('#myModal .modal-body').html('');
+			});
+			});
+		});*/
     }
   }
 };

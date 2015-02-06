@@ -1,0 +1,31 @@
+.jumbotron {
+	background-repeat: no-repeat;
+	background-position: right;
+	// background-image: url('http://placekitten.com/g/1140/300');
+	padding: 0;
+
+	.container, & {
+	border-radius: @border-radius-large;
+	}
+	
+	.container {
+		padding: @jumbotron-padding;
+		background: linear-gradient(to left, rgba(254,21,53,0) 35%, rgba(254,21,53,1) 65%);
+	}
+	
+	@media screen and (min-width: @screen-sm-min) {
+		padding-top: 0;
+		padding-bottom: 0;
+	
+		.container & {
+			padding-left:  0;
+			padding-right: 0;
+		}
+	
+		.container {
+			padding-top:    (@jumbotron-padding * 1.6);
+			padding-bottom: (@jumbotron-padding * 1.6);
+	
+		}
+	}
+}

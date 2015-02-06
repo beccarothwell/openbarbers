@@ -83,6 +83,8 @@ function roots_gallery($attr) {
   $unique = (get_query_var('page')) ? $instance . '-p' . get_query_var('page'): $instance;
   $output = '<div class="gallery gallery-' . $id . '-' . $unique . '">';
 
+//to limit gallery link to media rather than link page maybe edit below?
+  
   $i = 0;
   foreach ($attachments as $id => $attachment) {
     switch($link) {
@@ -122,9 +124,22 @@ if (current_theme_supports('bootstrap-gallery')) {
 /**
  * Add class="thumbnail img-thumbnail" to attachment items
  */
-function roots_attachment_link_class($html) {
-  $postid = get_the_ID();
-  $html = str_replace('<a', '<a class="thumbnail img-thumbnail"', $html);
+function roots_attachment_link_class($html, $id = null) {
+  /*$postid = get_the_ID();
+  $post_title = get_the_title($postid);*/
+  
+  $id = intval( $id );
+  $_post = get_post( $id );
+  $post_title = esc_attr( $_post->post_excerpt ); //post_excerpt outputs img caption, change to post_title to output img file title
+  $html = str_replace('<a', '<a class="thumbnail img-thumbnail" data-gallery title="'. $post_title .'"', $html);
   return $html;
 }
-add_filter('wp_get_attachment_link', 'roots_attachment_link_class', 10, 1);
+add_filter('wp_get_attachment_link', 'roots_attachment_link_class', 10, 2);
+
+/*function add_title_attachment_link($link, $id = null) {
+	$id = intval( $id );
+	$_post = get_post( $id );
+	$post_title = esc_attr( $_post->post_title );
+	return str_replace('<a href', '<a title="'. $post_title .'" href', $link);
+}
+add_filter('wp_get_attachment_link', 'add_title_attachment_link', 10, 2);*/

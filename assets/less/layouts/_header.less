@@ -1,1 +1,75 @@
-.banner { }
+.banner {
+	background: #fff;
+	border-color: #fe1535;
+	margin-bottom: 20px;
+	
+	.brand-box {
+		background: #fff;
+		padding: 0px 10px;
+		
+		.navbar-brand {
+			padding: 8px 10px;
+		}
+	}
+	
+	.nav-pills > li {
+	margin-top: 8px;
+	margin-left: 15px;
+		> a {
+		padding: 7px 15px;
+		color: @link-color;
+		font-weight: bold;
+		border: transparent solid 1px;
+		//background: lighten(@brand-base, 40%);
+			&:hover,
+			&:focus {
+				text-decoration: none;
+				border: #fe1535 solid 1px;
+				//background-color: @nav-link-hover-bg;
+				color: @nav-link-hover-color;
+			}
+		}
+		// Active state
+		&.active > a {
+			&,
+			&:hover,
+			&:focus {
+				color: @nav-pills-active-link-hover-color;
+				background-color: @nav-pills-active-link-hover-bg;
+			}
+		}
+	}
+	
+	#sprites {
+		margin: 0;
+		display: none;
+		
+		@media (min-width: @grid-float-breakpoint) {
+			display: inline-block;
+		}
+		
+		> li {
+			padding: 10px 5px;
+			margin:0;
+			float:left;
+			
+			> a {
+				height: 32px;
+				width: 32px;
+				background-image: url('/openbarbers/wp-content/themes/openbarbers/assets/img/openbarbers_social_sprites_circles.png');
+			}
+			
+			+#facebook > a{
+				background-position:0px 0px;
+			}
+				
+			+#twitter > a{
+				background-position: 32px 0px;
+			}
+				
+			+#tumblr > a{
+				background-position: 64px 0px;
+			}
+		}
+	}
+}

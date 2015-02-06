@@ -18,6 +18,16 @@ module.exports = function(grunt) {
     'assets/vendor/bootstrap/js/scrollspy.js',
     'assets/vendor/bootstrap/js/tab.js',
     'assets/vendor/bootstrap/js/affix.js',
+    'assets/vendor/blueimp-gallery/js/blueimp-gallery.js',
+    'assets/vendor/blueimp-gallery/js/blueimp-gallery-fullscreen.js',
+    'assets/vendor/blueimp-gallery/js/blueimp-gallery-indicator.js',
+    'assets/vendor/blueimp-gallery/js/blueimp-gallery-video.js',
+    'assets/vendor/blueimp-gallery/js/blueimp-gallery-vimeo.js',
+    'assets/vendor/blueimp-gallery/js/blueimp-gallery-youtube.js',
+    'assets/vendor/blueimp-gallery/js/jquery.blueimp-gallery.js',
+	'assets/vendor/blueimp-bootstrap-image-gallery/js/bootstrap-image-gallery.js',
+	//'assets/vendor/blueimp-gallery/js/jquery.blueimp-gallery.min.js',
+	//'assets/vendor/blueimp-bootstrap-image-gallery/js/bootstrap-image-gallery.min.js',
     'assets/js/plugins/*.js',
     'assets/js/_*.js'
   ];
@@ -32,7 +42,8 @@ module.exports = function(grunt) {
         'assets/js/*.js',
         '!assets/js/scripts.js',
         '!assets/**/*.min.*',
-		'!assets/js/ob_theme_settings.js'
+		'!assets/js/ob_theme_settings.js',
+		'!assets/js/_acf-googlemaps.js'
       ]
     },
     less: {
