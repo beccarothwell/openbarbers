@@ -39,6 +39,42 @@ function roots_widgets_init() {
     'before_title'  => '<h3>',
     'after_title'   => '</h3>',
   ));
+  
+  register_sidebar(array(
+    'name'          => __('First Footer Column', 'roots'),
+    'id'            => 'first-footer-widget-area',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+  
+  register_sidebar(array(
+    'name'          => __('Second Footer Column', 'roots'),
+    'id'            => 'second-footer-widget-area',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+  
+  register_sidebar(array(
+    'name'          => __('Third Footer Column', 'roots'),
+    'id'            => 'third-footer-widget-area',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
+  
+  register_sidebar(array(
+    'name'          => __('Fourth Footer Column', 'roots'),
+    'id'            => 'fourth-footer-widget-area',
+    'before_widget' => '<section class="widget %1$s %2$s">',
+    'after_widget'  => '</section>',
+    'before_title'  => '<h3>',
+    'after_title'   => '</h3>',
+  ));
 
   // Widgets
   register_widget('Roots_Vcard_Widget');

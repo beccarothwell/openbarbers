@@ -48,8 +48,8 @@ function roots_gallery($attr) {
   ), $attr));
 
   $id = intval($id);
-  $columns = (12 % $columns == 0) ? $columns: 4;
-  $grid = sprintf('col-sm-%1$s col-lg-%1$s', 12/$columns);
+  $columns = (12 % $columns == 0) ? $columns: 6;
+  $grid = sprintf('col-sm-%1$s col-lg-%1$s centred-col', 12/$columns);
 
   if ($order === 'RAND') {
     $orderby = 'none';
@@ -131,7 +131,7 @@ function roots_attachment_link_class($html, $id = null) {
   $id = intval( $id );
   $_post = get_post( $id );
   $post_title = esc_attr( $_post->post_excerpt ); //post_excerpt outputs img caption, change to post_title to output img file title
-  $html = str_replace('<a', '<a class="thumbnail img-thumbnail" data-gallery title="'. $post_title .'"', $html);
+  $html = str_replace('<a', '<a class="thumbnail img-thumbnail taped-up" data-gallery title="'. $post_title .'"', $html);
   return $html;
 }
 add_filter('wp_get_attachment_link', 'roots_attachment_link_class', 10, 2);

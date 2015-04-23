@@ -48,6 +48,16 @@ function ob_options_page_fields() {
         "std"     => "http://placekitten.com/g/300/140",
 		"btn"     => __('Upload Image','ob_textdomain')
     );
+	
+	$options[] = array(
+        "section" => "jumbotron",
+        "id"      => OB_SHORTNAME . "_jumbotron_logo",
+        "title"   => __( 'Image Upload', 'ob_textdomain' ),
+        "desc"    => __( 'Some Description', 'ob_textdomain' ),
+        "type"    => "image-uploader",
+        "std"     => "http://placekitten.com/g/300/140",
+		"btn"     => __('Upload Image','ob_textdomain')
+    );
 
     // Column One section
 	

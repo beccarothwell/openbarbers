@@ -1,9 +1,11 @@
 .about-main {
 	.make-sm-column(8);
+	background: #fff;
 }
 
 .about-side {
 	.make-sm-column(4);
+	background: #fff;
 }
 
 .about-row {
@@ -11,22 +13,26 @@
 	margin: 15px 0;
 }
 
-.about-image-one {
-	.make-sm-column(4);
-	border: 1px solid black;
+.about-text {
+
+	@media screen and (min-width: @screen-sm-min) {
+	.make-sm-column(12);
+	}
+	
+	@media screen and (min-width: @screen-md-min) {
+	.make-md-column(8);
+	}
 }
 
-.about-text-one {
-	.make-sm-column(8);
-	border: 1px solid black;
-}
+.about-image {
 
-.about-image-two {
-	.about-image-one;
-}
-
-.about-text-two {
-	.about-text-one;
+	@media screen and (min-width: @screen-sm-min) {
+	.make-sm-column(12);
+	}
+	
+	@media screen and (min-width: @screen-md-min) {
+	.make-md-column(4);
+	}
 }
 
 .about-text-three {

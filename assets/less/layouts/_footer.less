@@ -1,19 +1,54 @@
 .footer-row {
 	.make-row();
+}
 	
-	.footer-col-first {
-		.make-lg-column(3.75);
-		background: #fff;
-		margin-top: 30px;
-		min-height: 400px;
-		}
-	
-	.footer-col-after {
-		.footer-col-first;
-		.make-lg-column-offset(.375);
-		}
+.footer-col-one {
+	//background: #fff;
+	margin-top: 30px;
+	min-height: 400px;
+	border: 1px solid black;
+	color: #fff;
 
+	@media screen and (min-width: @screen-sm-min) {
+		.make-sm-column(5.5);
+		min-height: 400px;
 	}
+	
+	@media screen and (min-width: @screen-md-min) {
+		.make-md-column(3.75);
+		min-height: 400px;
+	}
+}
+	
+.footer-col-two {
+	.footer-col-one;
+	
+	@media screen and (min-width: @screen-sm-min) {
+		.make-sm-column-offset(1);
+		min-height: 400px;
+	}
+	
+	@media screen and (min-width: @screen-md-min) {
+		.make-md-column-offset(.375);
+		min-height: 400px;
+	}	
+}
+
+.footer-col-three {
+	.footer-col-one;
+	
+	@media screen and (min-width: @screen-sm-min) {
+		.make-sm-column(12);
+		margin: 30px 0 0;
+		min-height: 400px;
+	}
+	
+	@media screen and (min-width: @screen-md-min) {
+		.make-md-column(3.75);
+		.make-md-column-offset(.375);
+		min-height: 400px;
+	}	
+}
    
 .content-info {
 	background-color: #fe1535;
@@ -29,4 +64,49 @@
 
 p.copyright {
 	position: relative;
+	}
+	
+#sprites {
+		margin: 0;
+		padding: 0;
+		//display: inline-block;
+		list-style: none;
+		background: #fff;
+		
+		@media (min-width: @grid-float-breakpoint) {
+			//display: inline-block;
+		}
+		
+		> li {
+			padding: 10px 5px;
+			margin:0;
+			float:left;
+			
+			> a {
+				height: 32px;
+				width: 32px;
+				background-image: url('/openbarbers/wp-content/themes/openbarbers/assets/img/openbarbers_social_sprites_white.png');
+				display: block;
+			}
+			
+			+#facebook > a{
+				background-position:0px 0px;
+			}
+				
+			+#twitter > a{
+				background-position: 128px 0px;
+			}
+				
+			+#tumblr > a{
+				background-position: 96px 0px;
+			}
+			
+			+#instagram > a{
+				background-position: 64px 0px;
+			}
+			
+			+#youtube > a{
+				background-position: 32px 0px;
+			}
+		}
 	}

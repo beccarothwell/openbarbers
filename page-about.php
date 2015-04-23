@@ -9,15 +9,15 @@ Template Name: About Page
 	<div class="row">
 		<div class="about-main">
 			<div class="about-row">
+				<div class="about-text"><?php the_field('first_text_area'); ?></div>
 				<?php $image = get_field('first_image'); if( !empty($image) ): ?>
-				<img class="about-image-two" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+				<img class="about-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive"/>
 				<?php endif; ?>
-				<div class="about-text-one"><?php the_field('first_text_area'); ?></div>
 			</div>
 			<div class="about-row">
-				<div class="about-text-two"><?php the_field('second_text_area'); ?></div>
+				<div class="about-text"><?php the_field('second_text_area'); ?></div>
 				<?php $image = get_field('second_image'); if( !empty($image) ): ?>
-				<img class="about-image-two" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+				<img class="about-image" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" class="img-responsive"/>
 				<?php endif; ?>
 			</div>
 			<div class="about-row">
