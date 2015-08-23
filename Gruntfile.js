@@ -28,6 +28,8 @@ module.exports = function(grunt) {
 	'assets/vendor/blueimp-bootstrap-image-gallery/js/bootstrap-image-gallery.js',
 	//'assets/vendor/blueimp-gallery/js/jquery.blueimp-gallery.min.js',
 	//'assets/vendor/blueimp-bootstrap-image-gallery/js/bootstrap-image-gallery.min.js',
+	//assets/vendor/twitter-fetcher/js/twitterFetcher.js',
+	//'assets/vendor/twitter-fetcher/js/twitterFetcher_min.js',
     'assets/js/plugins/*.js',
     'assets/js/_*.js'
   ];

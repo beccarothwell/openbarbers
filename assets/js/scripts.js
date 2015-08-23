@@ -4659,7 +4659,8 @@ var Roots = {
   // All pages
   common: {
     init: function() {
-      // JavaScript to be fired on all pages	
+      // JavaScript to be fired on all pages
+	  
 	/*$(function(){
 		$('.navbar').data('size','big');
 	});

@@ -9,6 +9,7 @@
  * 1. jquery-1.11.1.min.js via Google CDN
  * 2. //maps.googleapis.com/maps/api/js?v=3.exp&sensor=false
  * 3. /theme/assets/js/vendor/modernizr.min.js
+ * 4. /theme/assets/js/vendor/twitterFetcher_min.js
  * 4. /theme/assets/js/scripts.js (in footer)
  *
  * Google Analytics is loaded after enqueued scripts if:
@@ -24,6 +25,7 @@ function roots_scripts() {
     $assets = array(
       'css'       => '/assets/css/main.css',
       'js'        => '/assets/js/scripts.js',
+	  'twfetcher' => '/assets/vendor/twitter-fetcher/twitterFetcher_min.js',
       'modernizr' => '/assets/vendor/modernizr/modernizr.js',
 	  'googlemaps' => '//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false',
       'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js'
@@ -34,6 +36,7 @@ function roots_scripts() {
     $assets     = array(
       'css'       => '/assets/css/main.min.css?' . $assets['assets/css/main.min.css']['hash'],
       'js'        => '/assets/js/scripts.min.js?' . $assets['assets/js/scripts.min.js']['hash'],
+	  'twfetcher' => '/assets/js/vendor/twitterFetcher_min.js',
       'modernizr' => '/assets/js/vendor/modernizr.min.js',
 	  'googlemaps' => '//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false',
       'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'
@@ -61,6 +64,7 @@ function roots_scripts() {
   wp_enqueue_script('modernizr', get_template_directory_uri() . $assets['modernizr'], array(), null, false);
   wp_enqueue_script('jquery');
   wp_enqueue_script('googlemaps');
+  wp_enqueue_script('twfetcher', get_template_directory_uri() . $assets['twfetcher'], array(), null, false);
   wp_enqueue_script('roots_js', get_template_directory_uri() . $assets['js'], array(), null, true);
 }
 add_action('wp_enqueue_scripts', 'roots_scripts', 100);
