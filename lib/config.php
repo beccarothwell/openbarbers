@@ -64,7 +64,8 @@ function roots_display_sidebar() {
       'template-custom.php',
 	  'page-about.php',
 	  'page-services.php',
-	  'page-gallery.php'
+	  'page-gallery.php',
+	  'page-accessibility.php'
     )
   );
 

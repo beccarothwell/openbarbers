@@ -131,9 +131,12 @@ function roots_attachment_link_class($html, $id = null) {
   $id = intval( $id );
   $_post = get_post( $id );
   $post_title = esc_attr( $_post->post_excerpt ); //post_excerpt outputs img caption, change to post_title to output img file title
-  $html = str_replace('<a', '<a class="thumbnail img-thumbnail taped-up" data-gallery title="'. $post_title .'"', $html);
+  $html = str_replace('<a', '<a class="thumbnail img-thumbnail" data-gallery title="'. $post_title .'"', $html);
   return $html;
 }
+
+// add "taped-up" to str_replace when ready
+
 add_filter('wp_get_attachment_link', 'roots_attachment_link_class', 10, 2);
 
 /*function add_title_attachment_link($link, $id = null) {

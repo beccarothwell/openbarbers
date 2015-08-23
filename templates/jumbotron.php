@@ -1,10 +1,8 @@
 <?php $ob_option = ob_get_global_options(); ?>
-<div class="jumbotron" style="background-image:url('<?php echo $ob_option['OB_jumbotron_image']; ?>');">
-	<!--<img src="<?php echo $ob_option['OB_jumbotron_image']; ?>" class="img-responsive">-->
+<div class="jumbotron" style="background-image:url('<?php the_field('jumbotron_image'); ?>');">
 	<div class="container">
-		<img src="<?php echo $ob_option['OB_jumbotron_logo']; ?>" class="img-responsive">
-		<!--<h1>Open Barbers</h1>-->
-		<p>Hairdressing for all genders and sexualities.</p>
-		<p><a class="btn btn-primary btn-lg" role="button">Book an appointment</a></p>
+		<img src="<?php the_field('jumbotron_logo'); ?>" class="img-responsive">
+		<p><?php the_field('jumbotron_strapline'); ?></p>
+		<p><a class="btn btn-primary btn-lg" role="button" href="<?php the_field('jumbotron_button_url'); ?>" target="_blank"><?php the_field('jumbotron_button_text'); ?></a></p>
 	</div>
 </div>
