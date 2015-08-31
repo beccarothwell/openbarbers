@@ -19,13 +19,13 @@
 function roots_scripts() {
   /**
    * The build task in Grunt renames production assets with a hash
-   * Read the asset names from assets-manifest.json
+   * Read the asset names from assets/manifest.json
    */
   if (WP_ENV === 'development') {
     $assets = array(
       'css'       => '/assets/css/main.css',
       'js'        => '/assets/js/scripts.js',
-	  'twfetcher' => '/assets/vendor/twitter-fetcher/twitterFetcher_min.js',
+	  'twfetcher' => '//assets/js/vendor/twitterFetcher_min.js',
       'modernizr' => '/assets/vendor/modernizr/modernizr.js',
 	  'googlemaps' => '//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false',
       'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js'

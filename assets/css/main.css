@@ -883,8 +883,8 @@ html {
 }
 body {
   font-family: "Quattrocento Sans", sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  line-height: 1.42857143;
+  font-size: 15px;
+  line-height: 1.33333333;
   color: #333333;
   background-color: #ffffff;
 }
@@ -933,7 +933,7 @@ img {
 }
 .img-thumbnail {
   padding: 4px;
-  line-height: 1.42857143;
+  line-height: 1.33333333;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
@@ -1066,11 +1066,11 @@ h6 .small,
 }
 h1,
 .h1 {
-  font-size: 36px;
+  font-size: 37px;
 }
 h2,
 .h2 {
-  font-size: 30px;
+  font-size: 31px;
 }
 h3,
 .h3 {
@@ -1082,7 +1082,7 @@ h4,
 }
 h5,
 .h5 {
-  font-size: 14px;
+  font-size: 15px;
 }
 h6,
 .h6 {
@@ -1093,18 +1093,18 @@ p {
 }
 .lead {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1.4;
 }
 @media (min-width: 768px) {
   .lead {
-    font-size: 21px;
+    font-size: 22.5px;
   }
 }
 small,
 .small {
-  font-size: 85%;
+  font-size: 80%;
 }
 cite {
   font-style: normal;
@@ -1238,7 +1238,7 @@ dl {
 }
 dt,
 dd {
-  line-height: 1.42857143;
+  line-height: 1.33333333;
 }
 dt {
   font-weight: bold;
@@ -1272,7 +1272,7 @@ abbr[data-original-title] {
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
-  font-size: 17.5px;
+  font-size: 18.75px;
   border-left: 5px solid #eeeeee;
 }
 blockquote p:last-child,
@@ -1285,7 +1285,7 @@ blockquote small,
 blockquote .small {
   display: block;
   font-size: 80%;
-  line-height: 1.42857143;
+  line-height: 1.33333333;
   color: #999999;
 }
 blockquote footer:before,
@@ -1324,7 +1324,7 @@ blockquote:after {
 address {
   margin-bottom: 20px;
   font-style: normal;
-  line-height: 1.42857143;
+  line-height: 1.33333333;
 }
 code,
 kbd,
@@ -1358,8 +1358,8 @@ pre {
   display: block;
   padding: 9.5px;
   margin: 0 0 10px;
-  font-size: 13px;
-  line-height: 1.42857143;
+  font-size: 14px;
+  line-height: 1.33333333;
   word-break: break-all;
   word-wrap: break-word;
   color: #333333;
@@ -2064,7 +2064,7 @@ th {
 .table > tbody > tr > td,
 .table > tfoot > tr > td {
   padding: 8px;
-  line-height: 1.42857143;
+  line-height: 1.33333333;
   vertical-align: top;
   border-top: 1px solid #dddddd;
 }
@@ -2291,7 +2291,7 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: 20px;
-  font-size: 21px;
+  font-size: 22.5px;
   line-height: inherit;
   color: #333333;
   border: 0;
@@ -2334,8 +2334,8 @@ input[type="checkbox"]:focus {
 output {
   display: block;
   padding-top: 7px;
-  font-size: 14px;
-  line-height: 1.42857143;
+  font-size: 15px;
+  line-height: 1.33333333;
   color: #555555;
 }
 .form-control {
@@ -2343,8 +2343,8 @@ output {
   width: 100%;
   height: 34px;
   padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
+  font-size: 15px;
+  line-height: 1.33333333;
   color: #555555;
   background-color: #ffffff;
   background-image: none;
@@ -2390,7 +2390,7 @@ input[type="time"],
 input[type="datetime-local"],
 input[type="month"] {
   line-height: 34px;
-  line-height: 1.42857143 \0;
+  line-height: 1.33333333 \0;
 }
 input[type="date"].input-sm,
 input[type="time"].input-sm,
@@ -2719,8 +2719,8 @@ select[multiple].input-lg {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.42857143;
+  font-size: 15px;
+  line-height: 1.33333333;
   border-radius: 4px;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -3124,7 +3124,7 @@ tbody.collapse.in {
   padding: 5px 0;
   margin: 2px 0 0;
   list-style: none;
-  font-size: 14px;
+  font-size: 15px;
   text-align: left;
   background-color: #ffffff;
   border: 1px solid #cccccc;
@@ -3150,7 +3150,7 @@ tbody.collapse.in {
   padding: 3px 20px;
   clear: both;
   font-weight: normal;
-  line-height: 1.42857143;
+  line-height: 1.33333333;
   color: #333333;
   white-space: nowrap;
 }
@@ -3199,7 +3199,7 @@ tbody.collapse.in {
   display: block;
   padding: 3px 20px;
   font-size: 12px;
-  line-height: 1.42857143;
+  line-height: 1.33333333;
   color: #999999;
   white-space: nowrap;
 }
@@ -3489,7 +3489,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon {
   padding: 6px 12px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: normal;
   line-height: 1;
   color: #555555;
@@ -3615,7 +3615,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .nav-tabs > li > a {
   margin-right: 2px;
-  line-height: 1.42857143;
+  line-height: 1.33333333;
   border: 1px solid transparent;
   border-radius: 4px 4px 0 0;
 }
@@ -4308,7 +4308,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   position: relative;
   float: left;
   padding: 6px 12px;
-  line-height: 1.42857143;
+  line-height: 1.33333333;
   text-decoration: none;
   color: #fe1535;
   background-color: #ffffff;
@@ -4543,7 +4543,7 @@ a.list-group-item.active > .badge,
 }
 .jumbotron p {
   margin-bottom: 15px;
-  font-size: 21px;
+  font-size: 23px;
   font-weight: 200;
 }
 .jumbotron > hr {
@@ -4566,7 +4566,7 @@ a.list-group-item.active > .badge,
   }
   .jumbotron h1,
   .jumbotron .h1 {
-    font-size: 63px;
+    font-size: 67.5px;
   }
 }
 .thumbnail,
@@ -4574,7 +4574,7 @@ a.list-group-item.active > .badge,
   display: block;
   padding: 4px;
   margin-bottom: 20px;
-  line-height: 1.42857143;
+  line-height: 1.33333333;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
@@ -5010,7 +5010,7 @@ a.list-group-item-danger.active:focus {
 .panel-title {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 16px;
+  font-size: 17px;
   color: inherit;
 }
 .panel-title > a {
@@ -5344,7 +5344,7 @@ a.list-group-item-danger.active:focus {
 }
 .close {
   float: right;
-  font-size: 21px;
+  font-size: 22.5px;
   font-weight: bold;
   line-height: 1;
   color: #000000;
@@ -5434,14 +5434,14 @@ button.close {
 .modal-header {
   padding: 15px;
   border-bottom: 1px solid #e5e5e5;
-  min-height: 16.42857143px;
+  min-height: 16.33333333px;
 }
 .modal-header .close {
   margin-top: -2px;
 }
 .modal-title {
   margin: 0;
-  line-height: 1.42857143;
+  line-height: 1.33333333;
 }
 .modal-body {
   position: relative;
@@ -5619,7 +5619,7 @@ button.close {
 .popover-title {
   margin: 0;
   padding: 8px 14px;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: normal;
   line-height: 18px;
   background-color: #f7f7f7;
@@ -6479,10 +6479,13 @@ figure.alignnone {
   width: 33%;
   max-width: 150px;
   height: auto;
+  padding: 2px;
 }
 .instagram-pics > li img {
   max-width: 100%;
   height: auto;
+  padding: 3px;
+  background: #fff;
 }
 .wrap {
   margin-left: 15px;
@@ -6613,8 +6616,44 @@ figure.alignnone {
 .sidebar {
   margin-bottom: 30px;
 }
+footer {
+  color: #fff;
+}
 footer a {
   color: #fff;
+}
+footer a:visited,
+footer a:active,
+footer a:focus {
+  text-decoration: none;
+  color: #fff;
+}
+footer a:hover {
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+}
+footer .widget {
+  padding: 15px;
+}
+footer .widget:before,
+footer .widget:after {
+  content: " ";
+  display: table;
+}
+footer .widget:after {
+  clear: both;
+}
+footer .widget:before,
+footer .widget:after {
+  content: " ";
+  display: table;
+}
+footer .widget:after {
+  clear: both;
+}
+footer .widget ul {
+  -webkit-padding-start: 0;
 }
 .footer-row {
   margin-left: -15px;
@@ -6623,39 +6662,61 @@ footer a {
 .footer-col {
   margin-top: 30px;
   color: #fff;
+  min-height: 400px;
+}
+.footer-col h3 {
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.footer-col-one {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  min-height: 400px;
+  /*.widget-first {
+			@media screen and (min-width: @screen-sm-min) {
+				display:none;
+			}
+		}
+		
+		.widget-2 {
+			display:none;
+			@media screen and (min-width: @screen-sm-min) {
+				display:block;
+			}
+		}*/
 }
 @media (min-width: 768px) {
-  .footer-col {
+  .footer-col-one {
     float: left;
     width: 50%;
   }
 }
 @media (min-width: 992px) {
-  .footer-col {
+  .footer-col-one {
     float: left;
-    width: 33.33333333%;
-  }
-}
-@media screen and (min-width: 768px) {
-  .footer-col-one .widget-first {
-    display: none;
-  }
-}
-.footer-col-one .widget-2 {
-  display: none;
-}
-@media screen and (min-width: 768px) {
-  .footer-col-one .widget-2 {
-    display: block;
+    width: 25%;
   }
 }
 .footer-col-two {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: none;
+}
+@media (min-width: 768px) {
+  .footer-col-two {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .footer-col-two {
+    float: left;
+    width: 37.5%;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-col-two {
@@ -6663,7 +6724,23 @@ footer a {
   }
 }
 .footer-col-three {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
   display: none;
+}
+@media (min-width: 768px) {
+  .footer-col-three {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .footer-col-three {
+    float: left;
+    width: 37.5%;
+  }
 }
 @media screen and (min-width: 992px) {
   .footer-col-three {
@@ -7426,49 +7503,15 @@ body:last-child .blueimp-gallery > .slides > .slide > .video-content:not(.video-
     padding-right: 5%;
   }
 }
-/* 
-* Example style!
-* You can do whatever the hell you want on your site :-)
-*/
-body {
-  font-family: Arial, "Liberation Sans", sans-serif;
+#RecentTweets ul {
+  margin: 0;
 }
-h2 {
-  clear: both;
-}
-p,
-a {
-  font-size: 9pt;
-  margin: 10px 0 0 0;
-  color: #3d3d3d;
-}
-a,
-a:visited {
-  color: #427fed;
-}
-a:hover {
-  color: #82afff;
-}
-ul li {
+#RecentTweets ul li {
   list-style: none;
   overflow: hidden;
-  border: 1px solid #dedede;
-  margin: 5px;
+  margin: 5px 0;
   padding: 5px;
-}
-ul li:hover {
-  background-color: #f0f3fb;
-}
-.user,
-.tweet,
-.timePosted {
-  float: left;
-}
-.user {
-  width: 25%;
-}
-.tweet {
-  width: 50%;
+  font-size: 15px;
 }
 .timePosted {
   width: 15%;

@@ -1,12 +1,29 @@
-footer a {
+footer {
 	color: #fff;
 	
+	a {
+		color: #fff;
+		
+		&:visited, &:active, &:focus{
+			text-decoration: none;
+			color: #fff;
+		}
+		
+		&:hover {
+			color: #000;
+			text-decoration: none;
+			font-weight: bold;
+			//text-shadow:0 0 1px #000;
+		}
+	}
+	
 	.widget {
-	//.make-md-column(3);
-	//float: left;
-	//position: relative;
-	//display: block;
-	//margin-right: 15px;
+	.clearfix();
+	padding: 15px;
+	
+		ul {
+		-webkit-padding-start: 0;
+		}
 	}
 }
 
@@ -17,12 +34,18 @@ footer a {
 .footer-col {
 		margin-top: 30px;
 		color: #fff;
-		.make-sm-column(6);
-		.make-md-column(4);
 		min-height: 400px;
 	
+	h3 {
+		text-transform: uppercase;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+	
 	&-one {
-		.widget-first {
+		.make-sm-column(6);
+		.make-md-column(3);
+		/*.widget-first {
 			@media screen and (min-width: @screen-sm-min) {
 				display:none;
 			}
@@ -33,10 +56,12 @@ footer a {
 			@media screen and (min-width: @screen-sm-min) {
 				display:block;
 			}
-		}
+		}*/
 	}
 	
 	&-two {
+		.make-sm-column(6);
+		.make-md-column(4.5);
 		display: none;
 		
 		@media screen and (min-width: @screen-sm-min) {
@@ -45,6 +70,8 @@ footer a {
 	}
 	
 	&-three {
+		.make-sm-column(6);
+		.make-md-column(4.5);
 		display: none;
 		
 		@media screen and (min-width: @screen-md-min) {

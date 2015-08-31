@@ -21,8 +21,8 @@ c.push(d);b++}if(null===A){a=c.length;g=0;f=document.getElementById(B);for(h="<u
 
 var config1 = {
   "id": '448482105949827072',
-  "domId": 'example1',
-  "maxTweets": 5,
+  "domId": 'RecentTweets',
+  "maxTweets": 3,
   "enableLinks": true,
   "showUser": false,
   "showTime": false,
