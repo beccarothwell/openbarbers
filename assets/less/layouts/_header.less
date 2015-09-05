@@ -2,33 +2,34 @@
 	background: #fff;
 	border-color: #fe1535;
 	margin-bottom: 20px;
-	
-	.brand-box {
-		background: #fff;
-		padding: 0px 10px;
+
+	.navbar-brand {	
+		display: none;
+		padding: 8px 10px 8px 0;
 		
-		.navbar-brand {
-			padding: 8px 10px;
+		@media screen and (min-width: @screen-sm-min) {
+		display: block;
 		}
 	}
+
 	
 	.nav-pills > li {
-	margin-top: 8px;
-	margin-right: 14px;
+		margin-top: @navbar-margin-top;
+		margin-right: @navbar-spacing;
 	
 		@media screen and (min-width: @screen-md-min) {
 			margin-right: 15px;
 		}
-	
+		
 		> a {
-		padding: 7px 12px;
-		color: @link-color;
-		font-weight: bold;
-		border: transparent solid 1px;
-		//background: lighten(@brand-base, 40%);
+			padding: @nav-link-padding-sm;
+			color: @link-color;
+			font-weight: @navbar-font-weight;
+			border: transparent solid 1px;
+			//background: lighten(@brand-base, 40%);
 		
 			@media screen and (min-width: @screen-md-min) {
-				padding: 7px 15px;
+				padding: @nav-link-padding;
 			}
 		
 			&:hover,
