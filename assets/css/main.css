@@ -6618,6 +6618,12 @@ figure.alignnone {
 }
 footer {
   color: #fff;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    text-align: left;
+  }
 }
 footer a {
   color: #fff;
@@ -6690,13 +6696,18 @@ footer .widget ul {
 @media (min-width: 768px) {
   .footer-col-one {
     float: left;
-    width: 50%;
+    width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {
   .footer-col-one {
     float: left;
     width: 25%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-col-one .widget-3 {
+    display: none;
   }
 }
 .footer-col-two {
@@ -6706,19 +6717,13 @@ footer .widget ul {
   padding-right: 15px;
   display: none;
 }
-@media (min-width: 768px) {
-  .footer-col-two {
-    float: left;
-    width: 50%;
-  }
-}
 @media (min-width: 992px) {
   .footer-col-two {
     float: left;
     width: 37.5%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .footer-col-two {
     display: block;
   }
@@ -6733,7 +6738,7 @@ footer .widget ul {
 @media (min-width: 768px) {
   .footer-col-three {
     float: left;
-    width: 50%;
+    width: 66.66666667%;
   }
 }
 @media (min-width: 992px) {
@@ -6742,8 +6747,29 @@ footer .widget ul {
     width: 37.5%;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .footer-col-three {
+    display: block;
+  }
+}
+.footer-col-three .widget-2 {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .footer-col-three .widget-2 {
+    display: block;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer-col-three .widget-2 {
+    display: none;
+  }
+}
+.footer-col-three .widget-3 {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .footer-col-three .widget-3 {
     display: block;
   }
 }
@@ -6769,10 +6795,31 @@ p.copyright {
   position: relative;
 }
 #sprites {
-  margin: 0;
+  margin: 0 auto;
+  width: 210px;
   padding: 0;
   list-style: none;
-  background: #fff;
+}
+#sprites:before,
+#sprites:after {
+  content: " ";
+  display: table;
+}
+#sprites:after {
+  clear: both;
+}
+#sprites:before,
+#sprites:after {
+  content: " ";
+  display: table;
+}
+#sprites:after {
+  clear: both;
+}
+@media screen and (min-width: 992px) {
+  #sprites {
+    margin: 0;
+  }
 }
 #sprites > li {
   padding: 10px 5px;

@@ -25,7 +25,7 @@ function roots_scripts() {
     $assets = array(
       'css'       => '/assets/css/main.css',
       'js'        => '/assets/js/scripts.js',
-	  'twfetcher' => '//assets/js/vendor/twitterFetcher_min.js',
+	  'twfetcher' => '/assets/js/vendor/twitterFetcher_min.js',
       'modernizr' => '/assets/vendor/modernizr/modernizr.js',
 	  'googlemaps' => '//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false',
       'jquery'    => '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js'
