@@ -8,18 +8,38 @@
 	-o-background-size: 100% auto; (necessary?)*/
 	// background-image: url('http://placekitten.com/g/1140/300');
 	padding: 0;
+	margin-left: -15px;
+	margin-right: -15px;
 
 	.container, & {
 	border-radius: @border-radius-large;
 	}
 	
 	.container {
-		padding: @jumbotron-padding;
+		padding: @jumbotron-padding @jumbotron-padding-sides;
 		background: linear-gradient(to left, rgba(254,21,53,0) 35%, rgba(254,21,53,1) 65%);
-		
-		> img {
-			max-width:250px;
+			
+		.jumbotron-content {
+			.make-md-column(2);
+			.make-sm-column(5);
+			text-align: center;
+			padding: 10px 0;
+			
+			> img {
+			max-width:100%;
+			width:80%;
+			margin: 0 auto;
 			}
+			
+			a {
+				max-width: 100%;
+				border: 2px solid #fff;
+				margin-top: 15px;
+			}
+		}
+		.jumbotron-strapline {
+			.make-sm-column(8);
+		}
 	}
 	
 	@media screen and (min-width: @screen-sm-min) {

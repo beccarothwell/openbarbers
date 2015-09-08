@@ -16,23 +16,29 @@
 
 // Brand/project name
 
-.navbar-brand {
-	img {
-	height: ceil(@navbar-height*0.9);
-	}
-	padding-top: ceil(@navbar-height*0.1);
-	padding-bottom: ceil(@navbar-height*0.1);
-}
 .navbar-btn {
-	margin-top: -(@navbar-height - @navbar-margin-top);
-	margin-bottom: 0;
 	padding: @nav-link-padding-sm;
 	font-weight: @navbar-font-weight;
 	line-height: @line-height-computed;
-	position: relative;
-	left: @navbar-spacing;
+	position: absolute;
+	top: 0;
+	right: @navbar-spacing;
+	
+	@media screen and (min-width: @screen-sm-min) {
+		position: relative;
+		margin-top: -(@navbar-height - @navbar-margin-top);
+		margin-bottom: 0;
+		left: @navbar-spacing;
+		right: 0;
+	}
 	
 	@media screen and (min-width: @screen-md-min) {
-				padding: @nav-link-padding;
-			}
+		padding: @nav-link-padding;
+		left: 0;
+	}
+}
+.navbar-toggle {
+	float: left;
+	margin-right: 0;
+	margin-left: @navbar-padding-horizontal;
 }

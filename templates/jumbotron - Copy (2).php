@@ -4,7 +4,10 @@
 		<div class="jumbotron-content">
 			<img src="<?php the_field('jumbotron_logo'); ?>" class="img-responsive">
 			
-			<a class="btn btn-primary btn-lg" role="button" type="button" href="<?php the_field('jumbotron_button_url'); ?>" target="_blank"><?php the_field('jumbotron_button_text'); ?></a>
+			<a class="btn btn-primary btn-lg" role="button" href="<?php the_field('jumbotron_button_url'); ?>" target="_blank"><?php the_field('jumbotron_button_text'); ?></a>
+		</div>
+		<div class="jumbotron-strapline">
+			<p><?php the_field('jumbotron_strapline'); ?></p>
 		</div>
 	</div>
 </div>

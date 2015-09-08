@@ -24,6 +24,6 @@
 			endif;
 			?>
 		</nav>
-		<button type="button" class="btn btn-accent navbar-btn navbar-right navbar-link">Book an appointment</button>
+		<a href="https://uk.bookingbug.com/home/39254" target="_blank" role="button" type="button" class="btn btn-primary navbar-btn navbar-right">Book an appointment</a>
 	</div>
 </header>

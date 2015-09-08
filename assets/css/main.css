@@ -6334,26 +6334,33 @@ figure.alignnone {
 /*.navbar-collapse {
 	max-height: @navbar-collapse-max-height;
 }*/
-.navbar-brand {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-.navbar-brand img {
-  height: 45px;
-}
 .navbar-btn {
-  margin-top: -42px;
-  margin-bottom: 0;
   padding: 7px 12px;
   font-weight: bold;
   line-height: 20px;
-  position: relative;
-  left: 14px;
+  position: absolute;
+  top: 0;
+  right: 14px;
+}
+@media screen and (min-width: 768px) {
+  .navbar-btn {
+    position: relative;
+    margin-top: -42px;
+    margin-bottom: 0;
+    left: 14px;
+    right: 0;
+  }
 }
 @media screen and (min-width: 992px) {
   .navbar-btn {
     padding: 7px 15px;
+    left: 0;
   }
+}
+.navbar-toggle {
+  float: left;
+  margin-right: 0;
+  margin-left: 15px;
 }
 .nav > li > a:focus {
   color: #fe1535;
@@ -6368,20 +6375,61 @@ figure.alignnone {
 	-moz-background-size: 100% auto;
 	-o-background-size: 100% auto; (necessary?)*/
   padding: 0;
+  margin-left: -15px;
+  margin-right: -15px;
 }
 .jumbotron .container,
 .jumbotron {
   border-radius: 6px;
 }
 .jumbotron .container {
-  padding: 30px;
+  padding: 30px 15px;
   background: -webkit-gradient(linear, right top, left top, color-stop(35%, rgba(254, 21, 53, 0)), color-stop(65%, #fe1535));
   background: -webkit-linear-gradient(right, rgba(254, 21, 53, 0) 35%, #fe1535 65%);
   background: -o-linear-gradient(right, rgba(254, 21, 53, 0) 35%, #fe1535 65%);
   background: linear-gradient(to left, rgba(254, 21, 53, 0) 35%, #fe1535 65%);
 }
-.jumbotron .container > img {
-  max-width: 250px;
+.jumbotron .container .jumbotron-content {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
+  padding: 10px 0;
+}
+@media (min-width: 992px) {
+  .jumbotron .container .jumbotron-content {
+    float: left;
+    width: 16.66666667%;
+  }
+}
+@media (min-width: 768px) {
+  .jumbotron .container .jumbotron-content {
+    float: left;
+    width: 41.66666667%;
+  }
+}
+.jumbotron .container .jumbotron-content > img {
+  max-width: 100%;
+  width: 80%;
+  margin: 0 auto;
+}
+.jumbotron .container .jumbotron-content a {
+  max-width: 100%;
+  border: 2px solid #fff;
+  margin-top: 15px;
+}
+.jumbotron .container .jumbotron-strapline {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .jumbotron .container .jumbotron-strapline {
+    float: left;
+    width: 66.66666667%;
+  }
 }
 @media screen and (min-width: 768px) {
   .jumbotron {
@@ -6538,20 +6586,25 @@ figure.alignnone {
 }
 .banner .navbar-brand {
   display: none;
-  padding: 8px 10px 8px 0;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 0;
+  padding-right: 28px;
 }
 @media screen and (min-width: 768px) {
   .banner .navbar-brand {
     display: block;
   }
 }
+.banner .navbar-brand img {
+  height: 45px;
+}
 .banner .nav-pills > li {
   margin-top: 8px;
-  margin-right: 14px;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 768px) {
   .banner .nav-pills > li {
-    margin-right: 15px;
+    margin-right: 14px;
   }
 }
 .banner .nav-pills > li > a {

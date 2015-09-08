@@ -5,20 +5,25 @@
 
 	.navbar-brand {	
 		display: none;
-		padding: 8px 10px 8px 0;
+		padding-top: ceil(@navbar-height*0.05);
+		padding-bottom: ceil(@navbar-height*0.05);
+		padding-left:0;
+		padding-right: floor(@navbar-spacing*2);
 		
 		@media screen and (min-width: @screen-sm-min) {
 		display: block;
+		}
+		img {
+			height: ceil(@navbar-height*0.9);
 		}
 	}
 
 	
 	.nav-pills > li {
 		margin-top: @navbar-margin-top;
-		margin-right: @navbar-spacing;
 	
-		@media screen and (min-width: @screen-md-min) {
-			margin-right: 15px;
+		@media screen and (min-width: @screen-sm-min) {
+			margin-right: @navbar-spacing;
 		}
 		
 		> a {
