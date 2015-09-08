@@ -6383,7 +6383,7 @@ figure.alignnone {
   border-radius: 6px;
 }
 .jumbotron .container {
-  padding: 30px 15px;
+  padding: 30px 0;
   background: -webkit-gradient(linear, right top, left top, color-stop(35%, rgba(254, 21, 53, 0)), color-stop(65%, #fe1535));
   background: -webkit-linear-gradient(right, rgba(254, 21, 53, 0) 35%, #fe1535 65%);
   background: -o-linear-gradient(right, rgba(254, 21, 53, 0) 35%, #fe1535 65%);
@@ -6411,7 +6411,7 @@ figure.alignnone {
 }
 .jumbotron .container .jumbotron-content > img {
   max-width: 100%;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
 }
 .jumbotron .container .jumbotron-content a {
